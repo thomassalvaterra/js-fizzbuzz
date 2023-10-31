@@ -1,13 +1,26 @@
+const container = document.getElementById("container");
+
 for ( let i = 1; i <= 100; i++) {
+
+    let testo;
     
     if ( i % 3 == 0 && i % 5 == 0 ) {
-        console.log ("FizzBuzz");
+       testo = "FizzBuzz";
+
     } else if (i % 3 == 0) {
-        console.log("Fizz");
+        testo = "Fizz";
+
     } else if (i % 5 == 0) {
-        console.log("Buzz");
+       testo = "Buzz";
+
     } else {
-        console.log(i);
+        testo = i;
+
     }
+
+    const box = document.createElement("div");
+    box.innerHTML = testo;
+    box.classList.add("box");
+    container.append (box);
    
 }

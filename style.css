@@ -9,3 +9,36 @@ body{
     background-color: #222;
     color: white;
 }
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.box{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background-color: #1389b2;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fizz {
+    background-color: #0cd6a1;
+} 
+
+.buzz {
+    background-color: #ffd166;
+    color: black;
+} 
+
+.fizzbuzz {
+    background-color: #f0466f;
+} 
